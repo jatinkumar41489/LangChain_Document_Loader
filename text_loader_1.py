@@ -3,6 +3,8 @@ Document (
           page_content = 'The actual text content.' , 
           metadata = {'source' : 'filename.pdf' , ......}
 )
+
+Every document loader returns a Python list of Document objects. Even if there is only one file, it wraps it in a list.
 """
 
 from langchain_community.document_loaders import TextLoader
